@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import Script from 'next/script'
 
 const Navbar = () => {
   return (
@@ -47,43 +48,12 @@ const Navbar = () => {
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta name="twitter:site" content="@tailwindmade" />
-
-        <link
-          crossOrigin="crossOrigin"
-          href="https://fonts.gstatic.com"
-          rel="preconnect"
-        />
-
-        <link
-          as="style"
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-          rel="preload"
-        />
-
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-
-        <link
-          href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-          rel="stylesheet"
-        />
-
-        <link
-          crossOrigin="anonymous"
-          href="/assets/styles/main.min.css"
-          media="screen"
-          rel="stylesheet"
-        />
-
-        <script
-          defer
-          src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
-        ></script>
-
-        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        
       </Head>
+
+      <Script defer src='https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js' />
+      <Script defer src='https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js' />
+
       <div className="w-full z-50 top-0 py-3 sm:py-5  absolute bg-[#493798]">
         <div className="container flex items-center justify-between">
           <div>
