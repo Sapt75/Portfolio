@@ -67,7 +67,7 @@ export default function Home(blogs) {
 
         <meta name="twitter:site" content="@tailwindmade" />
 
-        
+
       </Head>
 
 
@@ -278,16 +278,16 @@ export default function Home(blogs) {
 
               <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
                 <Link href="/">
-                  <img src="/assets/img/portfolio-apple.jpeg" className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0" alt="portfolio image" />
+                  <img src="/assets/img/portfolio-apple.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
                 </Link>
                 <Link href="/">
-                  <img src="/assets/img/portfolio-stripe.jpeg" className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0" alt="portfolio image" />
+                  <img src="/assets/img/portfolio-stripe.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
                 </Link>
                 <Link href="/">
-                  <img src="/assets/img/portfolio-fedex.jpeg" className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0" alt="portfolio image" />
+                  <img src="/assets/img/portfolio-fedex.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
                 </Link>
                 <Link href="/">
-                  <img src="/assets/img/portfolio-microsoft.jpeg" className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0" alt="portfolio image" />
+                  <img src="/assets/img/portfolio-microsoft.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
                 </Link>
               </div>
             </div>
@@ -300,22 +300,22 @@ export default function Home(blogs) {
                   </h2>
                   <div className="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
                     <span className="m-8 block">
-                      <img src="/assets/img/nodejs.png" alt="client logo" className="mx-auto block h-32 w-auto" />
+                      <img src="/assets/img/nodejs.png" width={100} height={100} alt="client logo" className="mx-auto block h-32 w-auto" />
                     </span>
                     <span className="m-8 block">
-                      <img src="/assets/img/react.png" alt="client logo" className="mx-auto block h-24 w-auto" />
-                    </span>
-
-                    <span className="m-8 block">
-                      <img src="https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress" alt="client logo" className="mx-auto block h-16 w-auto" />
+                      <img src="/assets/img/react.png" width={100} height={100} alt="client logo" className="mx-auto block h-24 w-auto" />
                     </span>
 
                     <span className="m-8 block">
-                      <img src="/assets/img/nextjs.png" alt="client logo" className="mx-auto block h-44 w-auto" />
+                      <img src="https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress" width={100} height={100} alt="client logo" className="mx-auto block h-16 w-auto" />
                     </span>
 
                     <span className="m-8 block">
-                      <img src="/assets/img/python.png" alt="client logo" className="mx-auto block h-20 w-auto" />
+                      <img src="/assets/img/nextjs.png" alt="client logo" width={100} height={100} className="mx-auto block h-44 w-auto" />
+                    </span>
+
+                    <span className="m-8 block">
+                      <img src="/assets/img/python.png" width={100} height={100} alt="client logo" className="mx-auto block h-20 w-auto" />
                     </span>
                   </div>
                 </div>
