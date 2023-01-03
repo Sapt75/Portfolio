@@ -25,7 +25,7 @@ const Post = ({ blog }) => {
 
         <title>WorkWithSaptarshi - Developer, Coder</title>
 
-        <meta property="og:title" content="Homepage | Atom Template" />
+        <meta property="og:title" content="Homepage | Portfolio Website" />
 
         <meta property="og:locale" content="en_US" />
 
