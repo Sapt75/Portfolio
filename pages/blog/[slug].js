@@ -4,6 +4,7 @@ import { createClient } from "next-sanity";
 import PortableText from "react-portable-text"
 import Script from "next/script"
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const Post = ({ blog }) => {
@@ -66,7 +67,7 @@ const Post = ({ blog }) => {
                   </h1>
                   <div className="flex items-center pt-5 md:pt-10">
                     <div>
-                      <img src="/assets/img/blog-author.jpg" className="h-20 w-20 rounded-full border-2 border-grey-70 shadow"
+                      <Image width={40} height={40} src="/assets/img/blog-author.jpg" className="h-20 w-20 rounded-full border-2 border-grey-70 shadow"
                         alt="author image" />
                     </div>
                     <div className="pl-5">
@@ -103,7 +104,7 @@ const Post = ({ blog }) => {
                 <div
                   className="flex flex-col items-center border-t border-lila py-12 pt-12 md:flex-row md:items-start xl:pb-20">
                   <div className="w-3/4 sm:w-2/5 lg:w-1/4 xl:w-1/5">
-                    <img src="/assets/img/blog-author.jpg" className="rounded-full shadow" alt="author image" />
+                    <Image width={40} height={40} src="/assets/img/blog-author.jpg" className="rounded-full shadow" alt="author image" />
                   </div>
                   <div className="ml-0 text-center md:ml-10 md:w-5/6 md:text-left">
                     <h3 className="pt-10 font-body text-2xl font-bold text-secondary md:pt-0">
