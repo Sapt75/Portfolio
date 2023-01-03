@@ -75,7 +75,7 @@ export default function Home(blogs) {
       <div id="main" className="relative">
         <div>
           <div>
-            <div className="relative bg-cover bg-center bg-no-repeat py-8"
+            <div id='home' className="relative bg-cover bg-center bg-no-repeat py-8"
               style={{ backgroundImage: "url(/assets/img/bg-hero.jpg)" }}>
               <div
                 className="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat">
@@ -84,7 +84,7 @@ export default function Home(blogs) {
               <div className="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
                 <div className="flex flex-col items-center justify-center lg:flex-row">
                   <div className="rounded-full border-8 border-primary shadow-xl">
-                    <img src="/assets/img/blog-author.jpg" className="h-48 rounded-full sm:h-56" alt="author" />
+                    <Image width={80} height={80} src="/assets/img/blog-author.jpg" className="h-48 rounded-full sm:h-56" alt="author" />
                   </div>
                   <div className="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
                     <h1 className="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl">
@@ -212,10 +212,10 @@ export default function Home(blogs) {
                 <div className="group rounded px-8 py-12 shadow hover:bg-primary">
                   <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
                     <div className="hidden group-hover:block">
-                      <img src="/assets/img/icon-development-white.svg" alt="development icon" />
+                      <Image width={160} height={160} src="/assets/img/icon-development-white.svg" alt="development icon" />
                     </div>
                     <div className="block group-hover:hidden">
-                      <img src="/assets/img/icon-development-black.svg" alt="development icon" />
+                      <Image width={160} height={160} src="/assets/img/icon-development-black.svg" alt="development icon" />
                     </div>
                   </div>
                   <div className="text-center">
@@ -230,10 +230,10 @@ export default function Home(blogs) {
                 <div className="group rounded px-8 py-12 shadow hover:bg-primary">
                   <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
                     <div className="hidden group-hover:block">
-                      <img src="/assets/img/icon-graphics-white.svg" alt="Graphic Design icon" />
+                      <Image width={160} height={160} src="/assets/img/icon-graphics-white.svg" alt="Graphic Design icon" />
                     </div>
                     <div className="block group-hover:hidden">
-                      <img src="/assets/img/icon-graphics-black.svg" alt="Graphic Design icon" />
+                      <Image width={160} height={160} src="/assets/img/icon-graphics-black.svg" alt="Graphic Design icon" />
                     </div>
                   </div>
                   <div className="text-center">
@@ -248,10 +248,10 @@ export default function Home(blogs) {
                 <div className="group rounded px-8 py-12 shadow hover:bg-primary">
                   <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
                     <div className="hidden group-hover:block">
-                      <img src="/assets/img/icon-content-white.svg" alt="content marketing icon" />
+                      <Image width={160} height={160} src="/assets/img/icon-content-white.svg" alt="content marketing icon" />
                     </div>
                     <div className="block group-hover:hidden">
-                      <img src="/assets/img/icon-content-black.svg" alt="content marketing icon" />
+                      <Image width={160} height={160} src="/assets/img/icon-content-black.svg" alt="content marketing icon" />
                     </div>
                   </div>
                   <div className="text-center">
@@ -278,16 +278,16 @@ export default function Home(blogs) {
 
               <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
                 <Link href="/">
-                  <img src="/assets/img/portfolio-apple.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
+                  <Image src="/assets/img/portfolio-apple.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
                 </Link>
                 <Link href="/">
-                  <img src="/assets/img/portfolio-stripe.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
+                  <Image src="/assets/img/portfolio-stripe.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
                 </Link>
                 <Link href="/">
-                  <img src="/assets/img/portfolio-fedex.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
+                  <Image src="/assets/img/portfolio-fedex.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
                 </Link>
                 <Link href="/">
-                  <img src="/assets/img/portfolio-microsoft.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
+                  <Image src="/assets/img/portfolio-microsoft.jpeg" width={640} height={408} className="w-full shadow mx-auto transform transition-all hover:scale-105 md:mx-0 cursor-pointer" alt="portfolio image" />
                 </Link>
               </div>
             </div>
@@ -300,22 +300,22 @@ export default function Home(blogs) {
                   </h2>
                   <div className="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
                     <span className="m-8 block">
-                      <img src="/assets/img/nodejs.png" width={100} height={100} alt="client logo" className="mx-auto block h-32 w-auto" />
+                      <Image src="/assets/img/nodejs.png" width={140} height={140} alt="client logo" className="mx-auto block" />
                     </span>
                     <span className="m-8 block">
-                      <img src="/assets/img/react.png" width={100} height={100} alt="client logo" className="mx-auto block h-24 w-auto" />
-                    </span>
-
-                    <span className="m-8 block">
-                      <img src="https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress" width={100} height={100} alt="client logo" className="mx-auto block h-16 w-auto" />
+                      <Image src="/assets/img/react.png" width={110} height={110} alt="client logo" className="mx-auto block" />
                     </span>
 
                     <span className="m-8 block">
-                      <img src="/assets/img/nextjs.png" alt="client logo" width={100} height={100} className="mx-auto block h-44 w-auto" />
+                      <Image src="/assets/img/mongo.svg" alt="client logo" width={260} height={260} className="mx-auto block" />
                     </span>
 
                     <span className="m-8 block">
-                      <img src="/assets/img/python.png" width={100} height={100} alt="client logo" className="mx-auto block h-20 w-auto" />
+                      <Image src="/assets/img/nextjs.png" alt="client logo" width={200} height={160} className="mx-auto block" />
+                    </span>
+
+                    <span className="m-8 block">
+                      <Image src="/assets/img/python.png" width={110} height={110} alt="client logo" className="mx-auto block" />
                     </span>
                   </div>
                 </div>
@@ -337,7 +337,7 @@ export default function Home(blogs) {
                   <div className="md:w-2/5">
                     <div className="flex justify-center md:justify-start">
                       <span className="shrink-0">
-                        <img src="/assets/img/logo-spotify.svg" className="h-auto w-32" alt="company logo" />
+                        <Image width={140} height={140} src="/assets/img/logo-spotify.svg" className="h-auto w-32" alt="company logo" />
                       </span>
                       <div className="relative ml-3 hidden w-full md:block">
                         <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
@@ -352,8 +352,8 @@ export default function Home(blogs) {
                       <div className="mt-1 flex">
                         <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
                         <div className="md:-mt-1 md:pl-8">
-                          <span className="block font-body font-bold text-grey-40">Apr 2015 - Mar 2018</span>
-                          <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">Frontend
+                          <span className="block font-body font-bold text-grey-40">Nov 2022 - Jan 2023</span>
+                          <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">Web
                             Developer</span>
                           <div className="pt-2">
                             <span className="block font-body text-black">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -370,7 +370,7 @@ export default function Home(blogs) {
                   <div className="md:w-2/5">
                     <div className="flex justify-center md:justify-start">
                       <span className="shrink-0">
-                        <img src="/assets/img/logo-microsoft.svg" className="h-auto w-32" alt="company logo" />
+                        <Image width={140} height={140} src="/assets/img/logo-microsoft.svg" className="h-auto w-32" alt="company logo" />
                       </span>
                       <div className="relative ml-3 hidden w-full md:block">
                         <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
@@ -403,7 +403,7 @@ export default function Home(blogs) {
                   <div className="md:w-2/5">
                     <div className="flex justify-center md:justify-start">
                       <span className="shrink-0">
-                        <img src="/assets/img/logo-fedex.svg" className="h-auto w-32" alt="company logo" />
+                        <Image width={130} height={130} src="/assets/img/logo-fedex.svg" className="h-auto w-32" alt="company logo" />
                       </span>
                       <div className="relative ml-3 hidden w-full md:block">
                         <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
@@ -442,11 +442,11 @@ export default function Home(blogs) {
                   <div className="grid grid-cols-2 gap-5 md:gap-8 xl:grid-cols-4 xl:gap-5">
                     <div className="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
                       <div>
-                        <img src="/assets/img/icon-project.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon project" />
+                        <Image width={80} height={80} src="/assets/img/icon-project.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon project" />
                       </div>
                       <div className="pt-5 md:pl-5 md:pt-0">
                         <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">
-                          10
+                          15
                         </h1>
                         <h4 className="text-grey-dark font-header text-base font-medium leading-loose md:text-xl">
                           Finished Projects
@@ -456,7 +456,7 @@ export default function Home(blogs) {
 
                     <div className="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
                       <div>
-                        <img src="/assets/img/icon-award.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon award" />
+                        <Image width={80} height={80} src="/assets/img/icon-award.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon award" />
                       </div>
                       <div className="pt-5 md:pl-5 md:pt-0">
                         <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">
@@ -471,12 +471,12 @@ export default function Home(blogs) {
                     <div
                       className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
                       <div>
-                        <img src="/assets/img/icon-happy.svg" className="mx-auto h-12 w-auto md:h-20"
+                        <Image width={80} height={80} src="/assets/img/icon-happy.svg" className="mx-auto h-12 w-auto md:h-20"
                           alt="icon happy clients" />
                       </div>
                       <div className="pt-5 md:pl-5 md:pt-0">
                         <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">
-                          8
+                          4
                         </h1>
                         <h4 className="text-grey-dark font-header text-base font-medium leading-loose md:text-xl">
                           Deployed
@@ -487,11 +487,11 @@ export default function Home(blogs) {
                     <div
                       className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
                       <div>
-                        <img src="/assets/img/icon-puzzle.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon puzzle" />
+                        <Image width={80} height={80} src="/assets/img/icon-puzzle.svg" className="mx-auto h-12 w-auto md:h-20" alt="icon puzzle" />
                       </div>
                       <div className="pt-5 md:pl-5 md:pt-0">
                         <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">
-                          40
+                          20
                         </h1>
                         <h4 className="text-grey-dark font-header text-base font-medium leading-loose md:text-xl">
                           Bugs Fixed

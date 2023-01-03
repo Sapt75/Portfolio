@@ -48,7 +48,7 @@ const Navbar = () => {
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta name="twitter:site" content="@tailwindmade" />
-        
+
       </Head>
 
       <Script defer src='https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js' />
@@ -56,11 +56,11 @@ const Navbar = () => {
 
       <div className="w-full z-50 top-0 py-3 sm:py-5  absolute bg-[#493798]">
         <div className="container flex items-center justify-between">
-          <div>
-            <Link href="/">
-              <h1 className='text-white text-2xl font-bold'>WorkWithSaptarshi</h1>
-            </Link>
-          </div>
+            <div>
+            <Link href='/#home'>
+              <h1 className='text-white text-2xl font-bold cursor-pointer'>WorkWithSaptarshi</h1>
+              </Link>
+            </div>
           <div className="hidden lg:block">
             <ul className="flex items-center">
 
